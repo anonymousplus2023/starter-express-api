@@ -1,22 +1,16 @@
 {
-  "name": "starter-express-api",
+  "name": "m3u",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "server.js",
+  "license": "MIT",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "serve": "forever start ./server.js",
+    "stop": "forever stop ./server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cyclic-software/starter-express-api.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/cyclic-software/starter-express-api/issues"
-  },
-  "homepage": "https://github.com/cyclic-software/starter-express-api#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "forever": "^4.0.3"
   }
 }
