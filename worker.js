@@ -50,14 +50,17 @@ const getCategoryItems = async (url) => {
 
   let source
   try {
-    const res = await axios.get(url)
+    const userAgent = 'user-agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36'
+
+    const res = await axios.get(url, { headers: {
+      'User-Agent': userAgent
+
+    }})
     source = res.data
   } catch (error) {
     console.log('getCategoryItems error', error)
     return
   }
-
-  console.log('>>> source', source)
 
   console.log(`get TOOK ${Date.now() - t1} ms`)
   t1 = Date.now()
