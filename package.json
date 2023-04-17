@@ -1,0 +1,16 @@
+{
+  "name": "m3u",
+  "version": "1.0.0",
+  "main": "server.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "serve": "forever start ./server.js",
+    "stop": "forever stop ./server.js"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "forever": "^4.0.3"
+  }
+}
