@@ -85,7 +85,7 @@ class List {
   categories = ['MOST_VIEWED', 'HOTTEST', 'TOP_RATED']
   // categories = ['HOTTEST']
 
-  categoryCacheTime = 12 * 3600 * 1000
+  categoryCacheTime = 1
   videoCacheTime = 0.5 * 3600 * 1000
 
   // queue = new PQueue({ concurrency: 1 })
