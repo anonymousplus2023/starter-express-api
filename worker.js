@@ -57,6 +57,7 @@ const getCategoryItems = async (url) => {
     return
   }
 
+  console.log('>>> source', source)
 
   console.log(`get TOOK ${Date.now() - t1} ms`)
   t1 = Date.now()
